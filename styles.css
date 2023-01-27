@@ -1,0 +1,88 @@
+body {
+  margin: 0px;
+}
+
+/* Navbar */
+
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-brand > i {
+  color: black;
+}
+
+.navbar-brand > h4 {
+  color: black;
+}
+
+.log-out {
+  color: red;
+  padding-left: 25px;
+}
+
+/* Pictures Display / Navs&Tabs */
+
+.pictures-display {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-buttons > a > i {
+  color: black;
+}
+
+/* Post Card  */
+
+.post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 60px;
+}
+
+.post-card {
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  height: 330px;
+}
+
+/* Modal */
+
+.button-camera {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.button-location {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.buttons-camera-location {
+  padding-top: 10px;
+  gap: 10px;
+  display: flex;
+}

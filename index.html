@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-light mx-auto">
+      <div class="container col-md-10 col-sm-6 mx-auto">
+        <div class="navbar-brand">
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <h4>Instagram</h4>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <div class="nav-item active">
+            <a class="nav-link" href="#">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Create a new post
+              </button>
+            </a>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-gear text-white"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Accesibility</a>
+              <a class="dropdown-item" href="#">Privacy and Data</a>
+              <hr />
+              <div>
+                <a class="log-out" href="#">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Pictures Display  -->
+
+    <div class="pictures-display">
+      <ul class="nav nav-tabs">
+        <li class="active tabs-buttons">
+          <a data-bs-toggle="pill" href="./index.html"
+            ><i class="fa-solid fa-square fa-2x"></i
+          ></a>
+        </li>
+        <li class="active tabs-buttons">
+          <a data-bs-toggle="pill" href="./index2.html"
+            ><i class="fa-solid fa-table-cells fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal for Create New Post  -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Create a new post
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h6>Caption:</h6>
+            </div>
+            <div>
+              <textarea
+                class="textarea"
+                placeholder="Add the caption of your post here"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+            <div class="buttons-camera-location">
+              <button class="button-camera">
+                <i class="fa-solid fa-camera fa-1x"></i>
+              </button>
+              <button class="button-location">
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Post Card  -->
+
+    <div class="container post-card">
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>My favorite waterfall</h3>
+              <span>26/01</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>1250 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus culpa numquam laboriosam in, ex sequi illo esse, amet
+                  autem atque nam temporibus modi quae vero qui rem ab. Rerum,
+                  labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>Perfect Seaview</h3>
+              <span>02/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>666 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus culpa numquam laboriosam in, ex sequi illo esse, amet
+                  autem atque nam temporibus modi quae vero qui rem ab. Rerum,
+                  labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>The mountains</h3>
+              <span>06/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>320 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus culpa numquam laboriosam in, ex sequi illo esse, amet
+                  autem atque nam temporibus modi quae vero qui rem ab. Rerum,
+                  labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>San Francisco</h3>
+              <span>10/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/74/4288/2848.jpg?hmac=q02MzzHG23nkhJYRXR-_RgKTr6fpfwRgcXgE0EKvNB8"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>880 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  vero numquam enim nesciunt nam? Nesciunt corrupti minus
+                  recusandae molestias ratione minima soluta necessitatibus
+                  placeat quia animi. Nam reprehenderit deleniti vero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>Green Bicycle</h3>
+              <span>15/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>375 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam aut consequuntur nulla eveniet, nihil, sint culpa
+                  magni et quo ex aspernatur. Consequatur eligendi quisquam
+                  accusantium repudiandae! Reprehenderit voluptatibus nemo
+                  expedita.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>Beautiful Flowers</h3>
+              <span>20/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/82/1500/997.jpg?hmac=VcdCqu9YiLpbCtr8YowUCSUD3-245TGekiXmtiMXotw"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>550 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam repudiandae iure doloremque voluptas eum iusto
+                  accusantium cupiditate corporis dolores laboriosam quidem
+                  quaerat, iste minima! Quod reprehenderit quasi aliquid dolore
+                  perferendis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>My favorite waterfall</h3>
+              <span>26/01</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/84/1280/848.jpg?hmac=YFRYDI4UsfbeTzI8ZakNOR98wVU7a-9a2tGF542539s"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>1250 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus culpa numquam laboriosam in, ex sequi illo esse, amet
+                  autem atque nam temporibus modi quae vero qui rem ab. Rerum,
+                  labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>Perfect Seaview</h3>
+              <span>02/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/106/2592/1728.jpg?hmac=E1-3Hac5ffuCVwYwexdHImxbMFRsv83exZ2EhlYxkgY"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>666 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus culpa numquam laboriosam in, ex sequi illo esse, amet
+                  autem atque nam temporibus modi quae vero qui rem ab. Rerum,
+                  labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-card row no-gutters">
+        <div class="col-md-5 col-sm-12 mx-auto">
+          <div class="card">
+            <div class="post-title">
+              <h3>The mountains</h3>
+              <span>06/02</span>
+            </div>
+            <div>
+              <img
+                class="card-img-top img-fluid"
+                src="https://fastly.picsum.photos/id/128/3823/2549.jpg?hmac=VbPyA2vESva2YdoXqll9REBcbQIskgv_c-D60C1s0xc"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h6><strong>320 Likes</strong></h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus culpa numquam laboriosam in, ex sequi illo esse, amet
+                  autem atque nam temporibus modi quae vero qui rem ab. Rerum,
+                  labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/65ce775ac7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
